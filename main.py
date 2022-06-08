@@ -15,7 +15,14 @@ while True:
     # converting the inputs to uppercase
     player_choice = player_input.upper()
 
+    # Getting the computer choice
+    computer_choice = random.choice(game_list)
+
+    print(player_choice , computer_choice)
+
+    # Setting an if condition to check 
     if (player_choice in game_list):
         print('You can play the game')
+        break    
     else:
-        print("Please Re-enter a valid choice from the above choices")
+        print("\nPlease Re-enter a valid choice from the above choices")
