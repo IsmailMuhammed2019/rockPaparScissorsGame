@@ -48,26 +48,27 @@ while True:
         # Printing the choosen value on the screen
         print("\nPlayer (" + player + ")" + " : " + "Computer (" + computer + ")")
         # while loop to check if the game is a tie it should replay
-        player == 'rock' and computer == 'paper'
-        print('Computer wins, paper covers rock')
-        break
-    elif player == 'rock' and computer == 'scissors':
-        print('You win, rock smashes scissors')
-        break
-    elif player == 'paper' and computer == 'rock':
-        print('You win, paper covers rock')
-        break
-    elif player == 'paper' and computer == 'scissors':
-        print('Computer wins, scissors cut paper')
-        break
-    elif player == 'scissors' and computer == 'rock':
-        print('Computer wins, rock smashes scissors')
-        break
-    elif player == 'scissors' and computer == 'paper':
-        print('You win, scissors cut paper') 
-        break
-    elif player == computer:
-        print('The game is a tie, Replay') 
+        if (player == 'Rock' and computer == 'Paper'):
+            print('Computer wins, paper covers rock')
+        
+        elif player == 'Rock' and computer == 'Scissors':
+            print('You win, rock smashes scissors')
+            
+        elif player == 'Paper' and computer == 'Rock':
+            print('You win, paper covers rock')
+            
+        elif player == 'Paper' and computer == 'Scissors':
+            print('Computer wins, scissors cut paper')
+            
+        elif player == 'Scissors' and computer == 'Rock':
+            print('Computer wins, rock smashes scissors')
+            
+        elif player == 'Scissors' and computer == 'Paper':
+            print('You win, scissors cut paper') 
+            break
 
+        elif player == computer:
+            print('The game is a tie, Replay') 
+        break
     else:
         print("\nPlease Re-enter a valid choice from the above choices")
