@@ -75,3 +75,5 @@ while True:
         break
     else:
         print("\nPlease Re-enter a valid choice from the above choices")
+        # Printing the final scores
+print("\nFinal Score: \nPlayer: " + str(player_score) + "\nComputer: " + str(computer_score))
