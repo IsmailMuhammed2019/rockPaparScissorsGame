@@ -4,6 +4,9 @@ import random
 # Setting the game_list
 game_list = ("R", "P", "S")
 
+player_score = 0
+computer_score = 0
+
 # welcoming player and printing out the rules of the game
 print("Welcome to the game of Rock, Paper, Scissors \n----------------------------------------------\n Rules Of The Game \n 1. Rock beats Scissors \n 2. Paper beats Rock  \n 3. Scissors beats Paper \n \nPlease enter a choice from the list below  \n'R' for Rock, \n'P' for Paper, and \n'S' for Scissors")
 
@@ -72,3 +75,5 @@ while True:
         break
     else:
         print("\nPlease Re-enter a valid choice from the above choices")
+        # Printing the final scores
+print("\nFinal Score: \nPlayer: " + str(player_score) + "\nComputer: " + str(computer_score))
